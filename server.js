@@ -12,7 +12,7 @@ var app = express();
 MongoHelper.connect();
 
 //start server
-app.set('port', process.env.port || 5000);
+app.set('port', process.env.PORT || 5000);
 
 var server = app.listen(app.get('port'), function() {
 	console.log('Server started');
