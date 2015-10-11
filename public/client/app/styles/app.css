@@ -2,6 +2,11 @@ body {
 	padding : 0;
 	margin : 0;
 	width : 100%;
+    background : #ecf0f1;
+}
+
+header {
+    margin-top: -20px;
 }
 .bm-header-text {
 	background : #1abc9c;
@@ -42,6 +47,9 @@ body {
     padding: 8px;
     margin-top: -8px;
 }
+
+
+
 .bm-menu-list {
 	-webkit-appearance : none;
 	-moz-appearance : none;
@@ -60,6 +68,14 @@ body {
     border-radius: 5px;
     border: 1px solid #3498db;
     color: #3498db;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition : all 0.3s ease-in-out;
+    transition : all 0.3s ease-in-out;
+}
+
+.bm-menu-list li:hover {
+    background-color: #3498db;
+    color : white;
 }
 
 /*
