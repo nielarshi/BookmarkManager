@@ -19,8 +19,15 @@
 			<i class="fa fa-star-o"></i>
 			<span>Add a bookmark</span>
 		</li>
+		<li ng-click="showHelp()">
+			<i class="fa fa-question"></i>
+			<span>Help</span>
+		</li>
 	</ul>
 
+	<div class="help-img" ng-if="helpClicked" ng-click="hideHelp()">
+			<img src="app/images/help.jpg"/>
+	</div>
 	<bm-bookmark-form ng-if="addBookmarkSelected"></bm-bookmark-form>
 	<bm-folder-form ng-if="addFolderSelected"></bm-folder-form>
 </div>

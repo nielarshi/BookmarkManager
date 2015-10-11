@@ -32,6 +32,17 @@ header {
     color: #7f8c8d;
     font-weight: normal;
 }
+
+.help-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.help-img img {
+    width : 100%;
+}
 /*
  * menu
  */
@@ -46,6 +57,20 @@ header {
     font-weight: 600;
     padding: 8px;
     margin-top: -8px;
+    
+    border-radius: 5px;
+    -webkit-transition : all 0.3s ease-in-out;
+    -moz-transition : all 0.3s ease-in-out;
+    transition : all 0.3s ease-in-out;
+}
+
+.bm-breadcrumb-item {
+    color : #3498db;
+}
+
+.bm-breadcrumb-item:hover {
+    background: #3498db;
+    color:white;
 }
 
 
@@ -68,9 +93,9 @@ header {
     border-radius: 5px;
     border: 1px solid #3498db;
     color: #3498db;
-    -webkit-transition : all 0.3s ease-in-out;
-    -moz-transition : all 0.3s ease-in-out;
-    transition : all 0.3s ease-in-out;
+    -webkit-transition : all 0.2s ease-in-out;
+    -moz-transition : all 0.2s ease-in-out;
+    transition : all 0.2s ease-in-out;
 }
 
 .bm-menu-list li:hover {
@@ -178,7 +203,7 @@ bm-folder-form, bm-bookmark-form {
 	width : 110px;
 	margin : 10px;
 	text-align: center;
-	
+	border : 1px solid #ecf0f1;
 	color: #2980b9;
 	height: 100px;
 	-webkit-transition : all 0.3s ease-out;
@@ -210,7 +235,7 @@ bm-folder-form, bm-bookmark-form {
 
 .bm-folder-block-main p, .bm-bookmark-block-main p {
 	font-size : 10px;
-	line-height: 5px;
+	line-height: 10px;
 }
 .bm-folder-block-main .bm-folder-block-name, .bm-bookmark-block-main .bm-bookmark-block-name {
 	font-weight : 900;

@@ -55,5 +55,13 @@ angular.module('bm.controllers')
 		});
 	};
 
+	$scope.showHelp = function() {
+		$scope.helpClicked = true;
+	};
+
+	$scope.hideHelp = function() {
+		$scope.helpClicked = false;
+	};
+
 
 });
