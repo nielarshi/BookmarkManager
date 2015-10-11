@@ -189,6 +189,7 @@ bm-folder-form, bm-bookmark-form {
 }
 .bm-folder-block-main .bm-folder-block-icon, .bm-bookmark-block-main .bm-bookmark-block-icon {
  	font-size: 3em;
+    margin-top : 10px;
 }
 
 .bm-folder-block-main p, .bm-bookmark-block-main p {

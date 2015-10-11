@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-var URL = "mongodb://127.0.0.1:27017/bm";
+var URL = "mongodb://niel:nielarshi@ds035664.mongolab.com:35664/bm";
+var db = mongoose.connection;
 var db = mongoose.connection;
 
 db.on('error', console.error);
