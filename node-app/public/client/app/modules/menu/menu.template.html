@@ -1,0 +1,26 @@
+<div ng-controller="MenuCtrl" class="bm-menu-main">
+	<bm-overlay ng-click="disposeAll()" ng-if="addBookmarkSelected || addFolderSelected || syncing"></bm-overlay>
+
+	<label ng-repeat="breadcrumb in breadcrumbs">
+		<span class="bm-breadcrumb-item" ng-click="changeContext(breadcrumb)">{{breadcrumb.name}}</span>
+		<i class='fa fa-caret-right'></i>
+	</label>
+
+	<ul class="bm-menu-list">
+		<li ng-click="syncUserData()">
+			<i class="fa fa-cloud-upload"></i>
+			<span>Sync</span>
+		</li>
+		<li ng-click="addFolder()">
+			<i class="fa fa-folder-o"></i>
+			<span>Add a folder</span>
+		</li>
+		<li ng-click="addBookmark()">
+			<i class="fa fa-star-o"></i>
+			<span>Add a bookmark</span>
+		</li>
+	</ul>
+
+	<bm-bookmark-form ng-if="addBookmarkSelected"></bm-bookmark-form>
+	<bm-folder-form ng-if="addFolderSelected"></bm-folder-form>
+</div>

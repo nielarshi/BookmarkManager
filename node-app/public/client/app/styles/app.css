@@ -1,0 +1,257 @@
+body {
+	padding : 0;
+	margin : 0;
+	width : 100%;
+}
+.bm-header-text {
+	background : #1abc9c;
+	padding : 25px;
+	width : 100%;
+	font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+
+.empty-page {
+	width : 100%;
+	height : 600px;
+	font-size : 3em;
+	text-align: center;
+	padding-top: 100px;
+    color: #95a5a6;
+}
+.empty-page .empty-page-msg {
+	font-size: 12px;
+    line-height: 23px;
+    padding: 15px;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+/*
+ * menu
+ */
+
+.bm-menu-main {
+	height: 50px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+.bm-menu-main span {
+	font-size: 12px;
+    font-weight: 600;
+    padding: 8px;
+    margin-top: -8px;
+}
+.bm-menu-list {
+	-webkit-appearance : none;
+	-moz-appearance : none;
+	appearance : none;
+	display: -webkit-box;
+    width: auto;
+    position: absolute;
+    right: 30px;
+    margin-top: -15px;
+}
+.bm-menu-list li {
+	list-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #3498db;
+    color: #3498db;
+}
+
+/*
+ * breadcrumb
+ */
+.bm-breadcrumb-item {
+	cursor : pointer;
+} 
+
+/*
+ * folders div - for horizontal placement
+ */
+.bm-folders, .bm-bookmarks { 
+	display : -webkit-flex;
+	padding : 20px;
+}
+
+/*
+ * form (new folder & new bookmark)
+ */
+
+bm-folder-form, bm-bookmark-form {
+	position : absolute;
+	width : 40%;
+	left : 30%;
+}
+
+.bm-item-1 {
+	padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    float: left;
+    font-size: x-large;
+    text-align: center;
+    background-color: #16a085;
+    color: white;
+}
+
+.bm-form-pop {
+	width: 300px;
+    border: 1px solid #1abc9c;
+    height: 330px;
+    border-radius: 6px;
+    margin: auto;
+    background-color: white;
+}
+
+.bm-form-pop .bm-item {
+	width : 100%;
+	float: left;
+	padding: 12px;
+}
+
+.bm-form-pop .bm-item span {
+	width: 250px;
+    float: left;
+}
+
+.bm-form-pop .bm-item input {
+	height: 26px;
+    width: 250px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bm-form-pop .bm-item input[type="submit"] {
+	height: 35px;
+    width: 272px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+}
+
+.bm-form-pop .bm-item textarea {
+	height: 62px;
+    width: 250px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-right : 10px;
+    padding-top: 5px;
+    padding-bottom : 5px;
+}
+
+/*
+ * folder block 
+ */
+
+.bm-folder-block-main, .bm-bookmark-block-main {
+	width : 110px;
+	margin : 10px;
+	text-align: center;
+	
+	color: #2980b9;
+	height: 100px;
+	-webkit-transition : all 0.3s ease-out;
+	-moz-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+
+.bm-bookmark-block-main {
+	color: #e67e22;
+}
+
+.bm-folder-block-main:hover, .bm-folder-block-main.bm-folder-block-selected {
+	border : 1px solid #9b59b6;
+	border-radius : 5px;
+	background-color: #3498db;
+	color : white;
+}
+ 
+.bm-bookmark-block-main:hover, .bm-bookmark-block-main.bm-bookmark-block-selected {
+	border : 1px solid #9b59b6;
+	border-radius : 5px;
+	background-color: #34495e;
+	color : white;
+}
+.bm-folder-block-main .bm-folder-block-icon, .bm-bookmark-block-main .bm-bookmark-block-icon {
+ 	font-size: 3em;
+}
+
+.bm-folder-block-main p, .bm-bookmark-block-main p {
+	font-size : 10px;
+	line-height: 5px;
+}
+.bm-folder-block-main .bm-folder-block-name, .bm-bookmark-block-main .bm-bookmark-block-name {
+	font-weight : 900;
+}
+
+.bm-bookmark-block-main .bm-bookmark-block-url, .bm-folder-block-main .bm-folder-block-desc {
+	line-height: 10px;
+    overflow: auto;
+}
+
+.bm-folder-block-options, .bm-bookmark-block-options {
+	width: 110px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-top: 10px solid white;
+    border-radius: 4px;
+    font-size: 25px;
+}
+
+.bm-bookmark-block-options span i, .bm-folder-block-options span i {
+	-webkit-transition : all 0.3s ease-in-out;
+	-moz-transition : all 0.3s ease-in-out;
+	transition : all 0.3s ease-in-out;
+}
+
+.bm-bookmark-block-options span i:hover, .bm-folder-block-options span i:hover {
+	transform : scale(1.5);
+}
+
+/*
+ * overlay
+ */
+
+ .bm-overlay {
+ 	width : 100%;
+ 	height : 100%;
+ 	position : absolute;
+ 	left : 0;
+ 	top : 0;
+ 	background : rgba(0, 0, 0, 0.57);
+ }
+
+[ng-drop] {
+	-webkit-transition : all 0.6s ease-in-out;
+	-moz-transition : all 0.6s ease-in-out;
+	transition : all 0.6s ease-in-out;
+}
+[ng-drag].drag-over{
+   border-radius: 5px;
+}
+[ng-drag].dragging{
+   opacity: 0.5;
+}
+[ng-drop].drag-enter{
+   border-radius: 5px;
+   background : rgba(0, 0, 0, 0.17);
+}
+   
+

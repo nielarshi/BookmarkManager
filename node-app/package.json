@@ -1,0 +1,11 @@
+{
+	"name" : "node-api",
+	"version" : "0.0.1",
+	"private" : true,
+	"dependencies" : {
+		"express": "*",
+    	"body-parser": "*",
+    	"mongoose": "*",
+    	"mime": "*"
+	}
+}

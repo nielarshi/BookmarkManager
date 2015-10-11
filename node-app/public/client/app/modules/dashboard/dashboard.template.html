@@ -1,0 +1,14 @@
+<div ng-click="clearAll()">
+	<div>
+		<div class="empty-page" ng-if="folders.length == 0 && bookmarks.length == 0">
+			<i class="fa fa-plus-square-o"></i>
+			<p class="empty-page-msg">You do not seem to have any bookmark or folder here. Would you like to create one? Click on 'Add a bookmark' to the right top to create.</p>
+		</div>
+		<div class="bm-folders" ng-if="folders.length > 0">
+			<bm-folder-block  ng-drop="true" ng-drop-success="onDropComplete($data,$event,folder)" ng-repeat="folder in folders track by $index" folder="folder" ng-dblclick="openFolder(folder)" ng-click="selectFolder(folder)"></bm-folder-block> 
+		</div> 
+		<div class="bm-bookmarks" ng-if="bookmarks.length > 0">
+			<bm-bookmark-block  ng-drag="true" ng-drag-data="bookmark" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" ng-repeat="bookmark in bookmarks track by $index" bookmark="bookmark" ng-dblclick="openUrl(bookmark)" ng-click="selectBookmark(bookmark)"></bm-bookmark-block> 
+		</div>
+	</div>
+</div>

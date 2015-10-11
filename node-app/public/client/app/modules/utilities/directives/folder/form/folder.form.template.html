@@ -1,0 +1,19 @@
+<div ng-controller="FolderFormController">
+	<form class="bm-form-pop" ng-submit="saveFolder()">
+		<label class="bm-item-1">
+			<i class="fa fa-folder-o"></i>
+			<span>New Folder</span>
+		</label>
+		<label class="bm-item">
+			<span>Name</span>
+			<input type="text" ng-model="folder.name"/>
+		</label>
+		<label class="bm-item">
+			<span>Description (optional)</span>
+			<textarea ng-model="folder.description"></textarea>
+		</label>
+		<label class="bm-item">
+			<input type="submit" value="Lets create!"/>
+		</label>
+	</form>
+</div>

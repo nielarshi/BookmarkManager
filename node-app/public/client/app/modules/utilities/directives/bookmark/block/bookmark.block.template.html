@@ -1,0 +1,12 @@
+<div ng-controller="BookmarkBlockController" class="bm-bookmark-block-main" ng-class="{ 'bm-bookmark-block-selected' : selectedBookmark._id==bookmark._id}">
+	<div class="bm-bookmark-block-options" ng-if="selectedBookmark._id==bookmark._id">
+		<span ng-click="openUrl(bookmark)"><i class="fa fa-external-link"></i></span>
+		<span ng-click="editBookmark(bookmark)"><i class="fa fa-pencil-square-o"></i></span>
+		<span ng-click="deleteBookmark(bookmark)"><i class="fa fa-times"></i></span>
+	</div>
+	<div ng-if="selectedBookmark._id!=bookmark._id">
+		<i class="fa fa-star-o bm-bookmark-block-icon"></i>
+	</div>
+	<p class="bm-bookmark-block-name">{{bookmark.title}}</p>
+	<p class="bm-bookmark-block-url">{{bookmark.url}}</p>
+</div>

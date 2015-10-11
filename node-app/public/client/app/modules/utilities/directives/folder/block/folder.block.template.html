@@ -1,0 +1,12 @@
+<div ng-controller="FolderBlockController" class="bm-folder-block-main" ng-class="{ 'bm-folder-block-selected' : selectedFolder._id==folder._id}">
+	<div class="bm-folder-block-options" ng-if="selectedFolder._id==folder._id">
+		<span ng-click="openFolder(folder)"><i class="fa fa-folder-open-o"></i></span>
+		<span ng-click="editFolder(folder)"><i class="fa fa-pencil-square-o"></i></span>
+		<span ng-click="deleteFolder(folder)"><i class="fa fa-times"></i></span>
+	</div>
+	<div ng-if="selectedFolder._id!=folder._id">
+		<i class="fa fa-folder-o bm-folder-block-icon"></i>
+	</div>
+	<p class="bm-folder-block-name">{{folder.name}}</p>
+	<p class="bm-folder-block-desc">{{folder.description}}</p>
+</div>

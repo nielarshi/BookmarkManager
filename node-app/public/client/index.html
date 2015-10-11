@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bookmarks app</title>
+		<link rel="stylesheet" href="app/libs/font-awesome-4.4.0/css/font-awesome.css"/>
+		<link rel="stylesheet" href="app/styles/app.css"/>
+
+		<!-- angular -->
+		<script src="app/libs/angular/angular.min.js" type="text/javascript"></script>
+		<script src="app/libs/angular/angular-route.min.js" type="text/javascript"></script>
+		<script src="app/libs/angular/ngDraggable.js" type="text/javascript"></script>
+
+		<!-- app main module -->
+		<script src="app/modules/main/app.js" type="text/javascript"></script>
+		<script src="app/modules/main/main.controller.js" type="text/javascript"></script>
+		<script src="app/modules/main/main.service.js" type="text/javascript"></script>
+		<script src="app/modules/main/main.util.js" type="text/javascript"></script>
+		<script src="app/modules/main/main.directive.js" type="text/javascript"></script>
+		<script src="app/modules/main/URLs.js" type="text/javascript"></script>
+
+		<!-- contextual module -->
+		<script src="app/modules/context/context.service.js" type="text/javascript"></script>
+		
+		<!-- menu module -->
+		<script src="app/modules/menu/menu.controller.js" type="text/javascript"></script>
+		<script src="app/modules/menu/menu.directive.js" type="text/javascript"></script>
+
+		<!-- dashboard module -->
+		<script src="app/modules/dashboard/dashboard.controller.js" type="text/javascript"></script>
+
+		<!-- userdata module -->
+		<script src="app/modules/userdata/userdata.service.js" type="text/javascript"></script>
+		<script src="app/modules/userdata/folder.helper.js" type="text/javascript"></script>
+		<script src="app/modules/userdata/bookmark.helper.js" type="text/javascript"></script>
+		<script src="app/modules/userdata/selection.notifier.js" type="text/javascript"></script>
+		<script src="app/modules/userdata/data.notifier.js" type="text/javascript"></script>
+
+		<!-- models -->
+		<script src="app/modules/utilities/models/model.creator.js" type="text/javascript"></script>
+		<script src="app/modules/utilities/models/model.type.js" type="text/javascript"></script>
+
+		<!-- bookmark form directive -->
+		<script src="app/modules/utilities/directives/bookmark/form/bookmark.form.directive.js" type="text/javascript"></script>
+		<script src="app/modules/utilities/directives/bookmark/form/bookmark.form.controller.js" type="text/javascript"></script>
+
+		<!-- folder block utility module -->
+		<script src="app/modules/utilities/directives/bookmark/block/bookmark.block.directive.js" type="text/javascript"></script>
+		<script src="app/modules/utilities/directives/bookmark/block/bookmark.block.controller.js" type="text/javascript"></script>
+
+		<!-- folder form utility module -->
+		<script src="app/modules/utilities/directives/folder/form/folder.form.directive.js" type="text/javascript"></script>
+		<script src="app/modules/utilities/directives/folder/form/folder.form.controller.js" type="text/javascript"></script>
+
+		<!-- folder block utility module -->
+		<script src="app/modules/utilities/directives/folder/block/folder.block.directive.js" type="text/javascript"></script>
+		<script src="app/modules/utilities/directives/folder/block/folder.block.controller.js" type="text/javascript"></script>
+
+		<!-- overlay directive -->
+		<script src="app/modules/utilities/directives/overlay/overlay.directive.js" type="text/javascript"></script>
+
+	</head>
+	<body ng-app="bookmarksManager" class="fa">
+		<header>
+			<p class="bm-header-text">Welcome to Bookmark Manager</p>
+			<bm-menu></bm-menu>
+		</header>
+		<ng-view></ng-view>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<div ng-controller="BookmarkFormController">
+	<form class="bm-form-pop" ng-submit="saveBookmark()">
+		<label class="bm-item-1">
+			<i class="fa fa-star-o"></i>
+			<span>New Bookmark</span>
+		</label>
+		<label class="bm-item">
+			<span>Title</span>
+			<input type="text" ng-model="bookmark.title"/>
+		</label>
+		<label class="bm-item">
+			<span>URL</span>
+			<textarea ng-model="bookmark.url"></textarea>
+		</label>
+		<label class="bm-item">
+			<input type="submit" value="Save for me!"/>
+		</label>
+	</form>
+</div>
